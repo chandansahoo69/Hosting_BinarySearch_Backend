@@ -34,6 +34,7 @@ const corsOption = {
 };
 
 app.use(cors(corsOption));
+app.set("trust proxy", 1);
 app.use("/storage", express.static("storage"));
 
 //initializing the port
