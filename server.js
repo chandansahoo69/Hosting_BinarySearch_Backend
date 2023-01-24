@@ -30,7 +30,7 @@ app.use(cookieParser());
 
 const corsOption = {
   credentials: true,
-  origin: ["*"],
+  origin: "https://binarysearch.onrender.com",
 };
 
 app.use(cors(corsOption));
