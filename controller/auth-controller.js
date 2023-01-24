@@ -119,7 +119,7 @@ class AuthController {
     res.cookie("refreshToken", refreshToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30,
       httpOnly: true, // Security purpose
-      sameSite: true,
+      sameSite: "lax",
       domain: "https://binarysearch.onrender.com",
     });
 
@@ -127,7 +127,7 @@ class AuthController {
     res.cookie("accessToken", accessToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30,
       httpOnly: true, // Security purpose
-      sameSite: true,
+      sameSite: "lax",
       domain: "https://binarysearch.onrender.com",
     });
 
@@ -183,14 +183,14 @@ class AuthController {
     res.cookie("refreshToken", refreshToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30,
       httpOnly: true,
-      sameSite: true,
+      sameSite: "lax",
       domain: "https://binarysearch.onrender.com",
     });
 
     res.cookie("accessToken", accessToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30,
       httpOnly: true,
-      sameSite: true,
+      sameSite: "lax",
       domain: "https://binarysearch.onrender.com",
     });
 
@@ -233,7 +233,7 @@ class AuthController {
     res.cookie("refreshToken", refreshToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30,
       httpOnly: true, // Security purpose
-      sameSite: true,
+      sameSite: "lax",
       domain: "https://binarysearch.onrender.com",
     });
 
@@ -241,7 +241,7 @@ class AuthController {
     res.cookie("accessToken", accessToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30,
       httpOnly: true, // Security purpose
-      sameSite: true,
+      sameSite: "lax",
       domain: "https://binarysearch.onrender.com",
     });
 
